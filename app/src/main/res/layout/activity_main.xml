@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/corona"
+        android:layout_width="133dp"
+        android:layout_height="218dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginBottom="465dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/corona" />
+
+    <ImageView
+        android:id="@+id/corazon"
+        android:layout_width="136dp"
+        android:layout_height="219dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="465dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/corona"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/corazon" />
+
+    <ImageView
+        android:id="@+id/sandia"
+        android:layout_width="134dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="234dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/corona"
+        app:srcCompat="@drawable/sandia" />
+
+    <ImageView
+        android:id="@+id/diablito"
+        android:layout_width="139dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="233dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sandia"
+        app:layout_constraintTop_toBottomOf="@+id/corazon"
+        app:srcCompat="@drawable/diablito" />
+
+    <Button
+        android:id="@+id/solicitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="147dp"
+        android:text="Solicitar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandia"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="109dp"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="59dp"
+        android:text="Resultados"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enviar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="11dp"
+        android:text="numero"
+        app:layout_constraintBottom_toTopOf="@+id/solicitar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diablito" />
+</androidx.constraintlayout.widget.ConstraintLayout>
